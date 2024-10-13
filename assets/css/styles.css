@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --font-family: "Kumbh Sans", sans-serif;
+    --dark-cyan: hsl(185, 75%, 39%);
+    --vds-blue: hsl(229, 23%, 23%);
+    --dg-blue: hsl(229, 23%, 23%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--dark-cyan);
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -3;
+    font-family: var(--font-family);
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+span {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.bg-top {
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: 0;
+    size: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.bg-bottom {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: -50%;
+    right: -5%;
+}
+
+.card {
+    max-width: 90%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px var(--dark-cyan);
+}
+
+.bg-card {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: static;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+    line-height: 25px;
+}
+
+.user-img {
+    width: 30%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+}
+
+.user-info {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+.user-info > p {
+    font-size: 1.5rem;
+}
+
+.user-stats {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+@media (width > 550px) {
+    .card {
+        width: 400px;
+    }
+
+    .user-img {
+        top: 100px;
+    }
+
+    .user-info {
+        padding-top: 80px;
+    }
+}
