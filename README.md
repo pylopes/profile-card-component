@@ -10,7 +10,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Profile card component]()
+- Live Site URL: [Profile card component](https://pylopes.github.io/profile-card-component/)
 
 ### Built with
 
